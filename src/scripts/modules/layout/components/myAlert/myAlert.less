@@ -1,0 +1,40 @@
+.cm-alert {
+  position : relative;
+  padding  : 15px 15px 25px;
+}
+
+.cm-alert_close {
+  position    : absolute;
+  top         : 5px;
+  right       : 7px;
+  font-size   : 18px;
+  line-height : 18px;
+  height      : 18px;
+
+  .fa {
+    color: lighten(black, 50);
+    .transition();
+
+    &:not([disabled]) {
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        color: lighten(black, 15);
+      }
+    }
+  }
+}
+
+.cm-alert_ico {
+  padding    : 5px 0 15px;
+  text-align : center;
+  font-size  : 28px;
+}
+
+.cm-alert_body {
+  text-align  : center;
+  font-weight : 500;
+}

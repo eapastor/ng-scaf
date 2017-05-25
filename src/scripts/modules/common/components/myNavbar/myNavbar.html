@@ -1,0 +1,21 @@
+<div class="cm-nav">
+  <div class="cm-nav_i">
+    <div class="cm-nav_brand">
+      <a href="/" ng-href="{{$ctrl.auth.isSignIn ? '/' : 'https://retail.cardsmobile.ru'}}">
+        Dragon Knight
+      </a>
+    </div>
+
+    <div class="cm-nav_links" ng-if="$ctrl.auth.isSignIn">
+      <a href="/" ng-href="{{link.disabled ? '' : link.url}}" class="cm-nav_link"
+         ng-repeat="link in $ctrl.links" ng-bind="link.name" target="{{link.target ? link.target : ''}}"
+         ng-disabled="link.disabled" ng-class="{active: $ctrl.page.data.section == link.section}"
+         uib-tooltip="{{link.disabled ? 'Раздел в разработке' : ''}}" tooltip-placement="bottom">
+      </a>
+    </div>
+
+    <div class="cm-nav_exit">
+      <div class="cm-nav_exit-btn" ng-if="$ctrl.auth.isSignIn" ng-click="$ctrl.signOut()">Выход</div>
+    </div>
+  </div>
+</div>

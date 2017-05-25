@@ -1,0 +1,42 @@
+{
+  "name": "dragonknight",
+  "version": "0.0.1",
+  "description": "Dragon Knight",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "prod": "gulp build-prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Gaito/ng-scaf.git"
+  },
+  "config": {
+    "deploy": {
+      "repository": "git@github.com:Gaito/ng-scaf.git",
+      "branch": "prod"
+    },
+    "ngConfig": "/src/scripts/config.json"
+  },
+  "author": "Aleksey Taburin",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^2.1.2",
+    "gulp-less": "^3.1.0",
+    "gulp-ng-constant": "^2.0.0-2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-task-loader": "^1.4.4",
+    "gulp-useref": "^3.1.2",
+    "node-flags": "^0.1.9",
+    "node-notifier": "^4.6.1",
+    "nodegit": "^0.16.0",
+    "run-sequence": "^1.2.2",
+    "through2": "^2.0.3"
+  }
+}

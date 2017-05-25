@@ -1,0 +1,7 @@
+{
+  "cmConfig": {
+    "app": "my.app",
+    "api": "/api",
+    "env": "prod"
+  }
+}

@@ -1,0 +1,18 @@
+<form method="post" class="cm-si-page" ng-submit="$ctrl.signIn()">
+
+  <div class="cm-si-page_i">
+    <div class="form-group" ng-class="{'has-error': $ctrl.errors.login}">
+      <label class="control-label">E-mail</label>
+      <input type="text" class="form-control" ng-model="$ctrl.login" tabindex="1" ng-change="$ctrl.change()">
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': $ctrl.errors.password}">
+      <label class="control-label">Пароль</label>
+      <input type="password" class="form-control" ng-model="$ctrl.password" tabindex="2" ng-change="$ctrl.change()">
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Войти</button>
+    </div>
+  </div>
+</form>

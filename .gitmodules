@@ -1,0 +1,3 @@
+[submodule "builder"]
+	path = builder
+	url = git@gitlab.i-free.com:web/builders/ng-builder.git

@@ -1,0 +1,16 @@
+{
+  "name": "ng-scaf",
+  "description": "Angular.js Scaffold",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "*",
+    "angular-bootstrap": "^2.0.0",
+    "showdown": "^1.6.4"
+  },
+  "resolutions": {
+    "angular": "1.6.4"
+  }
+}
