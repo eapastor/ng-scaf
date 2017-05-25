@@ -6,6 +6,20 @@
 
 * Node.js 4.4.7+
 * глобальные npm пакеты:
-  - bower
-  - gulp
+  - Bower
+  - Gulp
+* Nginx
 
+### Установка Bower
+
+```
+npm install -g bower
+```
+
+### Установка Gulp
+
+```
+npm install -g gulp
+```
+
+## Настройка nginx
