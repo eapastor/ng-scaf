@@ -32,7 +32,7 @@ function setConfig(config) {
 function task() {
   del(clean);
   var options = {
-    name     : 'cm.lib.config',
+    name     : 'tas.lib.config',
     deps     : [],
     constants: {cmConfig: $config.ng},
     wrap     : false

@@ -18,7 +18,7 @@
      * @return {Boolean}
      */
     function check() {
-      return this.isSignIn = Session.get('JSESSIONID') && Session.get('cm-user-id');
+      return this.isSignIn = Session.get('JSESSIONID') && Session.get('my-user-id');
     }
 
     /**
@@ -32,7 +32,7 @@
 
       function userHandler(user) {
         Session.set('JSESSIONID', user.JSESSIONID);
-        Session.set('cm-user-id', user.id);
+        Session.set('my-user-id', user.id);
         return user;
       }
 
@@ -48,7 +48,7 @@
     function signOut() {
       Users.setCurrent(null);
       Session.remove('JSESSIONID');
-      Session.remove('cm-user-id');
+      Session.remove('my-user-id');
     }
 
     function resetPassword(login) {

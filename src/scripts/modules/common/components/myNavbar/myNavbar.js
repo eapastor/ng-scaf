@@ -14,8 +14,7 @@
   function controller(Pages, Authorization, VS) {
     var links = [
       {name: 'Главная', url: '/', section: 'home', disabled: false},
-      {name: 'Spellbooks', url: '/spellbooks', section: 'spellbooks', disabled: false},
-      {name: 'Operations', url: '/operations', section: 'operations', disabled: false}
+      {name: 'Second', url: '/second', section: 'second', disabled: false}
     ];
 
     this.links = links;

@@ -4,7 +4,7 @@
   /**
    * @namespace {angular.Module} ngApp
    */
-  window.ngApp = angular.module('my.app', ['ngRoute', 'ui.bootstrap', 'cm.lib']);
+  window.ngApp = angular.module('my.app', ['ngRoute', 'ui.bootstrap', 'tas.lib']);
   ngApp.config(config);
   function config($qProvider, $compileProvider, $locationProvider, $routeProvider) {
     $qProvider.errorOnUnhandledRejections(false);
@@ -20,7 +20,7 @@
 
     $routeProvider
       .when('/', {
-        template      : '<cm-home-page></cm-home-page>',
+        template      : '<my-home-page></my-home-page>',
         reloadOnSearch: true,
         authorization : true,
         nav           : {
@@ -28,55 +28,31 @@
         }
       })
       .when('/signin', {
-        template      : '<cm-sign-in-page></cm-sign-in-page>',
+        template      : '<my-sign-in-page></my-sign-in-page>',
         reloadOnSearch: true,
         authorization : false,
         nav           : {
           section: 'signin'
         }
       })
-      .when('/spellbooks', {
-        template      : '<cm-spellbooks-page></cm-spellbooks-page>',
+      .when('/second', {
+        template      : '<my-second-page></my-second-page>',
         reloadOnSearch: true,
         authorization : true,
         nav           : {
-          section: 'spellbooks'
+          section: 'second'
         }
       })
-      .when('/spellbook/new', {
-        template      : '<cm-spellbook-new-page></cm-spellbook-new-page>',
+      .when('/second/:id', {
+        template      : '<my-second-item-page></my-second-item-page>',
         reloadOnSearch: true,
         authorization : true,
         nav           : {
-          section: 'spellbooks'
-        }
-      })
-      .when('/spellbook/:id', {
-        template      : '<cm-spellbook-page></cm-spellbook-page>',
-        reloadOnSearch: true,
-        authorization : true,
-        nav           : {
-          section: 'spellbooks'
-        }
-      })
-      .when('/operations', {
-        template      : '<cm-operations-page></cm-operations-page>',
-        reloadOnSearch: true,
-        authorization : true,
-        nav           : {
-          section: 'operations'
-        }
-      })
-      .when('/operation/:id', {
-        template      : '<cm-operation-page></cm-operation-page>',
-        reloadOnSearch: true,
-        authorization : true,
-        nav           : {
-          section: 'operations'
+          section: 'second'
         }
       })
       .otherwise({
-        template      : `<cm-not-found-page></cm-not-found-page>`,
+        template      : `<my-not-found-page></my-not-found-page>`,
         reloadOnSearch: true,
         authorization : false,
         nav           : {

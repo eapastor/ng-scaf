@@ -1,6 +1,6 @@
 'use strict';
 
-var builder   = require('./builder');
+var builder   = require('./builder/app.js');
 var $package  = require('./package.json');
 var $uiConfig = require('./src/scripts/config.json');
 var flags     = require('node-flags');

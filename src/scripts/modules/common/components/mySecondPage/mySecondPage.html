@@ -1,18 +1,13 @@
-<div class="container cm-op-page" ng-if="!$ctrl.loading">
+<div class="container my-sp-page" ng-if="!$ctrl.loading">
 
-  <div style="margin-top: 35px;"><strong>Operation:</strong> {{$ctrl.operation.id}}</div>
+  <h1>Second page</h1>
 
   <hr>
 
-  <div class="row">
-    <div class="col-sm-6">
-      <pre class="xx-debug" ng-bind="$ctrl.operation | json:2"></pre>
-    </div>
-    <div class="col-sm-6">
+  <p>Second page content</p>
 
-      <div ng-bind-html="$ctrl.payload"></div>
-
-    </div>
+  <div ng-repeat="item in $ctrl.items">
+    <a href="" ng-href="/second/{{item.id}}">{{item.name}}</a>
   </div>
 
 </div>

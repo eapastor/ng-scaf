@@ -39,7 +39,7 @@
 
     // ================> Utils functions <==================
     function loader(resolve, reject) {
-      var userId = Session.get('cm-user-id');
+      var userId = Session.get('my-user-id');
       if (!userId) throw new TypeError('USER_SESSION_ERROR');
 
       return step1().then(success, reject);

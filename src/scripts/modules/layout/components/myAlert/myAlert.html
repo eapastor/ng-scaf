@@ -1,12 +1,12 @@
-<div class="cm-alert">
-  <div class="cm-alert_close" ng-click="$ctrl.close()">
+<div class="my-alert">
+  <div class="my-alert_close" ng-click="$ctrl.close()">
     <i class="fa fa-times"></i>
   </div>
 
-  <div class="cm-alert_ico">
+  <div class="my-alert_ico">
     <i class="fa" ng-if="$ctrl.icoName" ng-class="'fa-' + $ctrl.icoName" ng-style="{color: $ctrl.icoColor}"></i>
   </div>
-  <div class="cm-alert_body">
+  <div class="my-alert_body">
     <div ng-bind-html="$ctrl.htmlBody"></div>
   </div>
 </div>
